@@ -149,7 +149,22 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  // Solution code here...
+  let newArr =[];
+  arr.forEach((num) => {
+    if(num % 3 == 0 && num % 5 !=0) {
+      num = "Fizz";
+      newArr.push(num);
+    } else if (num % 3 != 0 && num % 5 == 0) {
+      num = "Buzz";
+      newArr.push(num);
+    } else if (num % 3 ==0 && num % 5 == 0) {
+      num = "Fizz Buzz";
+      newArr.push(num);
+    } else {
+      newArr.push(num);
+    }
+});
+return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -203,7 +218,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   const inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
   test('It should print out messages or numbers', () => {
