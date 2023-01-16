@@ -14,7 +14,9 @@ const raisedToTheThird = (arr) => {
     num = Math.pow(num, 3);
     newArr.push(num);
   });
+
   return newArr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -24,8 +26,11 @@ Write a function named addOne that, given an array of numbers, uses map to retur
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
+
   let newArr = arr.map((num) => num + 1);
+
   return newArr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -50,7 +55,9 @@ For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and
 ------------------------------------------------------------------------------------------------ */
 
 const forLoopTwoToThe = (arr) => {
+
   let newArr = arr.map(num => Math.pow(2,num));
+
   return newArr;
 };
 
