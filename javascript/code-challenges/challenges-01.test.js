@@ -131,7 +131,7 @@ const createList = (availableItems) => {
       groceryList.push(value.name);
     }
   });
-  return groceryList;
+  return groceryList; 
 };
 
 /* ------------------------------------------------------------------------------------------------
