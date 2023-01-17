@@ -7,7 +7,6 @@ Write a function called addTwo that takes in an array and adds two to every valu
 ------------------------------------------------------------------------------------------------ */
 
 const addTwo = (arr) => {
-
   let newArr = [];
   for(let i = 0; i < arr.length; i++) {
     newArr.push(arr[i]+2);
@@ -24,7 +23,6 @@ For example, typeNum([1, 'bob' ,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
 const typeNum = (arr) => {
-
   return arr.filter(item => typeof item === 'number');
 };
 
@@ -50,7 +48,6 @@ For example, oddValues([1,2,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
 const oddValues = (arr) => {
-
  return arr.filter(num => num % 2 != 0);
 };
 
@@ -63,7 +60,6 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
 const notInFirstArray = (forbiddenValues, arr) => { return arr.filter(element =>!forbiddenValues.includes(element)
-
   );
 
 };
