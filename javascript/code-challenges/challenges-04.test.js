@@ -101,8 +101,16 @@ For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, an
 ------------------------------------------------------------------------------------------------ */
 
 const alphabetizeBetter = (arr) => {
-  return arr.sort((a,b) => a.localCompare(b));
-};
+  return arr.sort((a,b) =>
+  {
+    if (a.toLowerCase() < b.toLowerCase()){
+      return -1
+    }
+    else {
+      return 1
+    }
+  }
+)};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8 - Stretch Goal
